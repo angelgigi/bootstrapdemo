@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>按钮式下拉列表</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="../jquery-2.0.0.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="btn-group"> <!--按钮下拉菜单的大小-->
+          <button class="btn btn-info btn-lg" type="button"> 下拉列表</button><!--分割的按钮下拉菜单-->
+         <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
+
+             <span class="caret"></span>
+         </button>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+          </ul>
+      </div>
+      <div class="btn-group dropup"><!--向上按钮-->
+          <button class="btn btn-info" type="button"> 下拉列表</button><!--分割的按钮下拉菜单-->
+          <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" >
+
+              <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+          </ul>
+      </div>
+      <div class="btn-group">
+          <button class="btn btn-info btn-sm" type="button"> 下拉列表</button><!--分割的按钮下拉菜单-->
+          <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" >
+
+              <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+          </ul>
+      </div>
+      <div class="btn-group">
+          <button class="btn btn-info btn-xs" type="button"> 下拉列表</button><!--分割的按钮下拉菜单-->
+          <button class="btn btn-info btn-xs dropdown-toggle" type="button" data-toggle="dropdown" >
+
+              <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+          </ul>
+      </div>
+  </div>
+
+</body>
+</html>

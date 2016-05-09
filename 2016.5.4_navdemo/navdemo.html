@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>导航条的创建</title>
+    <link href="../bootstrap.css" rel="stylesheet">
+    <script src="../jquery-2.0.0.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+<body>
+    <!--标签式的导航菜单-->
+    <div class="container">
+       <ul id="myTab" class="nav nav-pills nav-justified" role="tablist"><!--nav-pills 胶囊式标签页 nav-stacked 垂直的胶囊式标签页 nav-justified 两端对齐的导航--->
+           <li role="presentation" class="action"><a href="#">Home</a></li>
+           <li role="presentation" class="disabled"><a href="#">ios</a></li><!--disabled禁止链接-->
+           <li role="presentation" class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">php
+                    <span class="caret"></span>
+               </a>
+               <ul class="dropdown-menu" role="menu">
+                   <li role="presentation"><a role="menuitem" tabindex="-1" >hello1</a></li>
+                   <li role="presentation"><a role="menuitem" tabindex="-1" >hello2</a></li>
+                   <li role="presentation"><a role="menuitem" tabindex="-1" >hello3</a></li>
+                   <li role="presentation"><a role="menuitem" tabindex="-1" >hello4</a></li>
+               </ul>
+           </li>
+       </ul>
+    </div>
+    <script>
+        $("#myTab a").click(function(e){
+            e.preventDefault();
+            $(this).tab("show");
+        })
+    </script>
+
+
+</body>
+</html>
