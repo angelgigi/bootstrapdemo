@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="../jquery-2.0.0.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" id="dlabel" class="btn btn-default" data-toggle="dropdown">下拉列表
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
+<!--在导航栏内的下拉菜单的用法：-->
+    <nav class="navbar navbar-default" role="navigation">
+       <div class="navbar-header">
+           <a class="navbar-brand">Wscschool</a>
+       </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">ios</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">hello1</a></li>
+                        <li><a href="#">hello2</a></li>
+                        <li><a href="#">hell3</a></li>
+                        <li><a href="#">hello4</a></li>
+                        <li><a href="#">hello5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+</html>
