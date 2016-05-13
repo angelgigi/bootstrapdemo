@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工具提示框</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="../jquery-2.0.0.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>tooltip</h1>
+            <small>Bootstrap test</small>
+        </div>
+
+        <p class="muted" style="margin-bottom: 0">
+            hello,极客学院，我比较喜欢这里！hello,<a href="#" data-toggle="tooltip" title="" data-original-title="我是lukuan">极客学院</a>，我比较喜欢这里！hello,极客学院，我比较喜欢这里！hello,极客学院，我比较喜欢这里！hello,极客学院，我比较喜欢这里！
+            hello,极客学院，我比较喜欢这里！hello,<a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">极客学院</a>，我比较喜欢这里！hello,极客学院，我比较喜欢这里！hello,极客学院，我比较喜欢这里！hello,极客学院，我比较喜欢这里！
+            hello,极客学院，我比较喜欢这里！hello,<a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">极客学院</a>，我比较喜欢这里！hello,极客学院，我比较喜欢这里！hello,极客学院，我比较喜欢这里！hello,极客学院，我比较喜欢这里！
+        </p>
+    </div>
+    <br>
+
+    <p style="margin-left: 350px">
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="默认的 Tooltip">
+            默认的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">
+            顶部的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="底部的 Tooltip">
+            底部的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">
+            右侧的 Tooltip
+        </button>
+    </p>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
